@@ -1,0 +1,8 @@
+.Item .num {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.Item .remove {
+  margin-bottom: 1rem;
+}
