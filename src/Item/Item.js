@@ -14,7 +14,7 @@ class Item extends Component {
     return (
       <div className="Item">
         <div className="num">{this.props.value}</div>
-        <button className="remove" onClick={this.props.removeNum}>
+        <button className="remove" onClick={this.handleRemove}>
           X
         </button>
       </div>

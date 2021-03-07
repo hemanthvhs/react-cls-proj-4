@@ -18,8 +18,8 @@ class NumberList extends Component {
   }
 
   render() {
-    const num = this.state.nums.map(num => {
-      return <Item value={num} removeNum={this.removeNum} />;
+    const num = this.state.nums.map((num, idx) => {
+      return <Item key={idx} value={num} removeNum={this.removeNum} />;
     });
     return (
       <div>
@@ -31,3 +31,9 @@ class NumberList extends Component {
 }
 
 export default NumberList;
+
+/* 
+Note: Key need to be passed if you are looping in Child Components.
+This key should be unique. 
+
+ */
